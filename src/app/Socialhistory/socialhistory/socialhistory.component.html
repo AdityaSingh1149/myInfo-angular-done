@@ -1,0 +1,25 @@
+    <h2><i class="far fa-clock"></i> Social History</h2>
+<table class="table table-striped table-hover table-responsive-sm  t_border">
+<thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+      <th>Quantity</th>
+      <th>Date Captured</th>
+      <th>Edit</th>
+      <th>Delete</th>
+    </tr>
+  </thead>
+  <tbody class="text-capitalize">
+
+    <tr *ngFor="let socialhistory of socialhistory"> 
+      <td> {{socialhistory.type}} </td>
+      <td> {{socialhistory.description}} </td>
+      <td> {{socialhistory.quantity}} </td>
+      <td>{{socialhistory.dateCaptured}}</td>
+      <td> <button  (click)="updateSocialHistory(socialhistory)" class="btn btn-outline-primary">Update</button> &nbsp;      </td>
+      <td> <button  (click)="deleteSocialHistory(socialhistory.socialHistoryId)" class="btn btn-primary">Delete</button>  </td>
+
+    </tr>
+  </tbody>
+</table>

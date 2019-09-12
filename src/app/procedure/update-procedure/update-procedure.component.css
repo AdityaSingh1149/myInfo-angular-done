@@ -1,0 +1,14 @@
+
+.btnback{
+    margin-left: 500px;
+    margin-top: -62.5px;
+    margin-bottom: 50px;
+    
+    }
+@media only screen and (max-width: 1160px)
+{
+    .btnback{
+            margin-left: 0px;
+            margin-top: 0px;
+    }
+}

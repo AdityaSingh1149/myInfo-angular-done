@@ -1,0 +1,53 @@
+<h2><i class="far fa-clock"></i> Social History</h2>
+ 
+ <form (ngSubmit)="onSubmit()">
+       
+        <div class="col-md-6">
+            <input type="hidden" name="id " class="form-control " [(ngModel)]="socialHistory.socialHistoryId " required >
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class=" form group ">
+                        <label for="date">Type:</label>
+                    <input name="date "  class="form-control " [(ngModel)]="socialHistory.type " required/>
+                    
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class=" form group ">
+                        <label for="date">Description:</label>
+                    <input name="type " class="form-control " [(ngModel)]="socialHistory.description " required>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-6">
+                <div class=" form group ">
+                        <label for="date">Quantity:</label>
+                    <input name="action " class="form-control " [(ngModel)]="socialHistory.quantity " required>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class=" form group ">
+                        <label for="date">Date Captured:</label>
+                    <input name="status " class="form-control " [(ngModel)]="socialHistory.dateCaptured" required>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class=" form group ">
+            <div class="row">
+                <div class="col-md-6">
+                    <input type="submit" value="Update" class="btn btn-primary btn-block">         
+                </div>
+                
+            </div>
+        </div>
+    </form>
+    <br>
+    <div class="row">
+            <div class="col-md-6 btnback">
+                    <button (click)="backclicked()"class="btn btn-primary btn-block "> Back</button>        
+                </div>
+    </div>

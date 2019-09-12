@@ -1,0 +1,24 @@
+<h4><i class='far fa-file-alt'></i> plan of treatment</h4>
+    <table class="table table-striped table-hover table-responsive-sm  table-bordered">
+<thead>
+<tr>
+  <th>Date</th>
+  <th>Type</th>
+  <th>Action</th>
+  <th>Status</th>
+  <th>Edit</th>
+  <th>Delete</th>
+</tr>
+</thead>
+<tbody class="text-capitalize">
+<tr *ngFor="let planoftreatement of planoftreatement">
+<td> {{ planoftreatement.date }} </td>
+<td>{{ planoftreatement.type}}</td>
+<td> {{ planoftreatement.action }} </td>
+<td> {{ planoftreatement.status }} </td>
+<td> <button (click)="updatePlanoftreatement(planoftreatement)" class="btn btn-outline-primary">Update</button> </td>
+<td> <button (click)="deletePlanoftreatement(planoftreatement)" class="btn btn-primary"> Delete</button> </td>
+            
+</tr>
+</tbody>
+</table>

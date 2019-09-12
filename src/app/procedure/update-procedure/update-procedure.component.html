@@ -1,0 +1,40 @@
+<h4> <i class="fas fa-band-aid"></i> procedures</h4>
+
+ 
+ <form (ngSubmit)="onSubmit()">
+       
+        <div class="col-md-6">
+            <input type="hidden" name="id " class="form-control " [(ngModel)]="procedure.procedureId " required >
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class=" form group ">
+                        <label for="name">Date:</label>
+                    <input name="date "  class="form-control " [(ngModel)]="procedure.date " required/>
+                    
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class=" form group ">
+                        <label for="effective_dates">Procedure Name:</label>
+                    <input name="type " class="form-control " [(ngModel)]="procedure.procedureName " required>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class=" form group ">
+            <div class="row">
+                <div class="col-md-6">
+                    <input type="submit" value="Update" class="btn btn-primary btn-block">         
+                </div>
+                
+            </div>
+        </div>
+    </form>
+    <br>
+    <div class="row">
+            <div class="col-md-6 btnback">
+                    <button (click)="backclicked()"class="btn btn-primary btn-block "> Back</button>        
+                </div>
+    </div>

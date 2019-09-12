@@ -1,0 +1,9 @@
+ ul li a{
+     color: rgba(35, 53, 223, 0.808);
+ }
+ ul li a:hover{
+    color: #FFC107;
+}
+.list-group{
+    border-right:3px solid rgb(106, 130, 150);
+}

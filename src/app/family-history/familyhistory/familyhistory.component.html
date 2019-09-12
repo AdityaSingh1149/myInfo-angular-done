@@ -1,0 +1,25 @@
+
+    <h4><i class="fa fa-adjust"></i> family history</h4>
+    <table class="table table-striped table-hover table-responsive-sm  table-bordered" >
+  <thead>
+        <tr>
+        <th>family member</th>
+        <th>diagonosis</th>
+        <th>age at onset</th>
+        <th>status</th>
+        <th>Edit</th>
+        <th>Delete</th>
+        
+      </tr>
+      </thead>
+      <tbody class="text-capitalize">
+        <tr *ngFor="let familyHistory of familyHistory">
+          <td> {{familyHistory.familyMember}} </td>
+          <td> {{familyHistory.diagnosis}} </td>
+          <td> {{familyHistory.ageAtOnset}} </td>
+          <td> {{familyHistory.status}} </td>
+          <td> <button (click)="updatefamilyHistory(familyHistory)" class="btn btn-outline-primary">Update</button> </td>
+          <td> <button (click)="deletefamilyHistory(familyHistory)" class="btn btn-primary"> Delete</button> </td>
+        </tr>
+      </tbody>
+</table>

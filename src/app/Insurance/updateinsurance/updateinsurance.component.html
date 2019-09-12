@@ -1,0 +1,53 @@
+<br><br> <h4><i class='far fa-file-alt'></i>Insurance</h4>
+ 
+ <form (ngSubmit)="onSubmit()">
+       
+        <div class="col-md-6">
+            <input type="hidden" name="id " class="form-control " [(ngModel)]="insurance.insuranceId " required >
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class=" form group ">
+                        <label for="Name">Name:</label>
+                    <input name="date "  class="form-control " [(ngModel)]="insurance.name" required/>
+                    
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class=" form group ">
+                        <label for="insuranceType">InsuranceType:</label>
+                    <input name="type " class="form-control " [(ngModel)]="insurance.insuranceType " required>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-6">
+                <div class=" form group ">
+                        <label for="coveredPartyId">Covered Party Id:</label>
+                    <input name="action " class="form-control " [(ngModel)]="insurance.coveredPartyId " required>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class=" form group ">
+                        <label for="payerGroupId">Payer Group Id:</label>
+                    <input name="status " class="form-control " [(ngModel)]="insurance.payerGroupId" required>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class=" form group ">
+            <div class="row">
+                <div class="col-md-6">
+                    <input type="submit" value="Update" class="btn btn-primary btn-block">         
+                </div>
+                
+            </div>
+        </div>
+    </form>
+    <br>
+    <div class="row">
+            <div class="col-md-6 btnback">
+                    <button (click)="backclicked()"class="btn btn-primary btn-block "> Back</button>        
+                </div>
+    </div>

@@ -1,0 +1,46 @@
+<br><br> <h4><i class='far fa-file-alt'></i> plan of treatment</h4>
+ 
+ <form (ngSubmit)="onSubmit()">
+        <div class="col-md-6">
+            <input type="hidden" name="id " class="form-control " [(ngModel)]="vitals.id " required >
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class=" form group ">
+                        <label for="Date">Date:</label>
+                    <input name="date "  class="form-control " [(ngModel)]="vitals.date " required/>
+                    
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class=" form group ">
+                        <label for="VitalSigns">VitalSigns:</label>
+                    <input name="type " class="form-control " [(ngModel)]="vitals.vitalSigns " required>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-12">
+                <div class=" form group ">
+                        <label for="Result">Result:</label>
+                    <input name="action " [(ngModel)]="vitals.result " class="form-control " required>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class=" form group ">
+            <div class="row">
+                <div class="col-md-6">
+                    <input type="submit" value="Update" class="btn btn-primary btn-block">         
+                </div>
+                
+            </div>
+        </div>
+    </form>
+    <br>
+    <div class="row">
+            <div class="col-md-6 btnback">
+                    <button (click)="backclicked()"class="btn btn-primary btn-block" > Back</button>        
+                </div>
+    </div>

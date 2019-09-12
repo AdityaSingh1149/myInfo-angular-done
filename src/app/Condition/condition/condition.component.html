@@ -1,0 +1,26 @@
+
+        <h4> <img src="images/conditn.png"> conditions</h4>
+        <table class="table table-striped table-hover table-responsive-sm  table-bordered">
+<thead >
+ <tr>
+        <th>Name</th>
+        <th>Effective Dates</th>
+        <th>Last Related Visits</th>
+        <th>Status</th>
+        <th>Update</th>
+        <th>Delete</th>
+  </tr>
+</thead>
+<tbody>
+  <tr *ngFor="let condition of condition">
+        <td>{{condition.name}}</td>
+        <td>{{condition.effectiveDates}}</td>
+        <td>{{condition.lastRelatedVisit}}</td>
+        <td>{{condition.status}}</td>
+        <td> <button (click)="updateCondition(condition)" class="btn btn-outline-primary">Update</button> </td>
+        <td> <button (click)="deleteCondition(condition)" class="btn btn-primary"> Delete</button> </td>
+
+  </tr>
+</tbody>
+</table>
+ 

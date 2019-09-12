@@ -1,0 +1,22 @@
+<h4><img src="images/heartrate.png"> Vitals</h4>
+<table class="table  table-hover table-responsive-sm  table-bordered">
+    <thead>
+        <tr>
+            <th>Date</th>
+            <th>Vital Signs</th>
+            <th>Results</th>
+            <th>Edit</th>
+            <th>Delete</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let vitals of vitals">
+            <td> {{ vitals.date }} </td>
+            <td>{{ vitals.vitalSigns }}</td>
+            <td>{{ vitals.result }}</td>
+            <td> <button (click)="updateVitals(vitals)" class="btn btn-outline-primary">Update</button> </td>
+            <td> <button (click)="deleteVitals(vitals)" class="btn btn-primary"> Delete</button> </td>
+        </tr>
+    </tbody>
+</table>
